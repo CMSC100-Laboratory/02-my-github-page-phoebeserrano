@@ -1,4 +1,20 @@
 /*----------------------------------------------------*/
+/* Font Face */
+@font-face {
+    font-family: "Cinzel-Static";
+    src: url(font/CinzelDecorative-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Federo";
+    src: url(font/Federo-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*----------------------------------------------------*/
 /* Body */
 body {
     background-color: #0b1838;
@@ -11,7 +27,38 @@ html {
 
 #navButtons {
     position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 20px;
 }
+
+#navButtons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+#navButtons .star-button {
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
+}
+
+.buttonText {
+    font-size: 15px;
+    color: #0b1838;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Federo";
+}
+
 /*----------------------------------------------------*/
 /* About Me Section */
 #aboutSec {
@@ -21,10 +68,10 @@ html {
     
 }
 #aboutMe {
-    font-size: 60px;
+    font-family: "Cinzel-Static";
+    font-size: 70px;
     margin-left: 20px;
-    color: #ffd700
-
+    color: #ffd700;
 }
 #aboutHeader {
     display: flex;
@@ -40,8 +87,9 @@ html {
 }
 
 #logo {
-    width: 50px;
-    height: 50px;    
+    width: 60px;
+    height: 60px; 
+    margin-right: 30px;   
 }
 
 #personalPic {
@@ -70,17 +118,18 @@ html {
     justify-content: center;
     justify-self: center;
     justify-items: center;
-    margin-top: 200px;
+    padding-top: 200px;
 }
 
 #skills {
+    font-family: "Cinzel-Static";
+    font-size: 70px;
     justify-self: center;
-    font-size: 48px;
     color: #ffd700
 }
 
 #skillsList {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /*----------------------------------------------------*/
@@ -88,11 +137,12 @@ html {
 #projectsSec {
     display: flex;
     flex-direction: column;
-    padding-left: 25%;
+    padding-top: 200px;
 }
 
 #projects {
     justify-self: center;
+    justify-items: center;
 }
 
 #gardeningProj,
