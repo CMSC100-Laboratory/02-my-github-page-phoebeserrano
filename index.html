@@ -3,80 +3,133 @@
 <html>
     <head>
         <title> Test title</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <nav>
-            <a href="#">About Me</a>
-            <a href="#">Projects</a>
-        </nav>
+        <div id="navButtons">
+            <a href="#aboutSec">
+                <button type="button">About Me</button>
+            </a>
+            <a href="#skillsSec">
+                <button type="button">Skills</button>
+            </a>
+            <a href="#projectsSec">
+                <button type="button">Projects</button>
+            </a>
+        </div>
 
 
         <!--------------------------------------------------->
         <!-- About Me Section -->
-        <section>
+        <section id="aboutSec">
+            
             <!-- Header -->
-            <h1>
-                About Me
-            </h1>
+            <img src="images/logo.png" id="personalPic"> 
+
+            <!-- Information under "About Me"-->
+            <div id="aboutInfo">
+                <!-- Section Title-->
+                <div id="aboutHeader">
+                    <img src="images/logo.png" id="logo">
+                    <p id="aboutMe">
+                        About Me
+                    </p>
+                </div>
+                
+                <!--------------------------------------->
+                <!-- About Me: Information -->
+                <div class="information">
+                    <!-- Full Name -->
+                    <p id="fullName">
+                        Deigna Phoebe Marie P. Serrano
+                    </p>
+                    <!-- Degree Program -->
+                    <p id="degProg">
+                        BS Computer Science
+                    </p>
+                    <!-- Phone Number -->
+                    <p id="phoneNum">
+                        +639231085494
+                    </p>
+                    <!-- Email -->
+                    <p id="email">
+                        dpserrano2@up.edu.ph
+                    </p>
+                </div>
+            </div>
 
 
-            <img src="yes"> 
-            <p> Deigna Phoebe Marie P. Serrano</p>
-            <p> BS Computer Science </p>
-            <p>
-                +639231085494
-                dpserrano2@up.edu.ph
-            </p>
-        </section>
+        </section> <!-- //end of aboutSec-->
+
+        <!--------------------------------------------------->
+        <!-- Autobiography Section -->
+        <p id="autobiography">
+            placeholder of autobiography: qwertyuiopasdfghjklzxcvbnm
+        </p>
 
         <!--------------------------------------------------->
         <!-- Skills Section -->
-        <section>
-            <h1>
+        <div id="skillsSec">
+            <h1 id="skills">
                 Skills
             </h1>
 
-            <p>
+            <p id="skillsList">
                 Python, C, HTML, CSS, Javascript, Java, R
             </p>
-        </section>
+        </div> <!-- //end of skillsSec div-->
 
         <!--------------------------------------------------->
         <!-- Projects -->
-         <section>
-            <h1>
+         <section id="projectsSec">
+            <h1 id="projects">
                 Projects
             </h1>
 
             <!-- CMSC 12: GARDENING LOGGING SYSTEM -->
-            <img src="sure">
-            <p>
-                GARDENING LOGGING SYSTEM
-            </p>
-            <p>
-                Terminal-Based Inventory System
-            </p>
+            <div id="gardeningProj">
+                <img src="images/logo.png" class="projImg">
+                <div id="gardeningProjText">
+                    <p class="projTitle">
+                        GARDENING LOGGING SYSTEM
+                    </p>
+                    <p class="projDesc">
+                        Terminal-Based Inventory System
+                    </p>  
+                </div>
+  
+            </div>
 
             <!-- CMSC 22: TERAGARDEN -->
-            <img src="yeah">
-            <p>
-                TERAGARDEN
-            </p>
-            <p>
-                Game-Based Inventory System
-            </p>
+            <div id="teragardenProj">
+                <img src="images/logo.png" class="projImg">
+                <div id="teragardenProjText">
+                    <p class="projTitle">
+                        TERAGARDEN
+                    </p>
+                    <p class="projDesc">
+                        Game-Based Inventory System
+                    </p>
+                </div>
+
+            </div>
+
 
             <!-- CMSC 150: GREENVALE’S POLLUTION REDUCTION PLANNER -->
-            <img src="yup">
-            <p>
-                GREENVALE'S POLLUTION REDUCTION PLANNER
-            </p>
-            <p>
-                Cost Optimization Calculator
-            </p>
+            <div id="greenvaleProj">
+                <img src="images/logo.png" class="projImg">
+                <div id="greenvaleProjText">
+                    <p class="projTitle">
+                        GREENVALE'S POLLUTION REDUCTION PLANNER
+                    </p>
+                    <p class="projDesc">
+                        Cost Optimization Calculator
+                    </p>
+                </div>
 
+            </div>
 
-         </section>
+        </section> <!-- //end of projectsSec-->
     </body>
 </html>
