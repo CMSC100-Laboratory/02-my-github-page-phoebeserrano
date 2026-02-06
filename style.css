@@ -14,9 +14,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Cinzel-Bold";
+    src: url(font/CinzelDecorative-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*----------------------------------------------------*/
 /* Body */
 body {
+    margin: 0;
+    padding: 0;
+    background: url(images/bg.jpg);
     background-color: #0b1838;
     color: white;
 }
@@ -28,9 +38,11 @@ html {
 #navButtons {
     position: fixed;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     padding-left: 20px;
+    padding-top: 30px;
+    gap: 40px;
 }
 
 #navButtons button {
@@ -40,18 +52,18 @@ html {
     background: transparent;
     border: none;
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
 
 #navButtons .star-button {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5));
 }
 
 .buttonText {
-    font-size: 15px;
+    font-size: 17px;
     color: #0b1838;
     position: absolute;
     text-align: center;
@@ -59,12 +71,21 @@ html {
     font-family: "Federo";
 }
 
+#skillsText {
+    font-size: 20px;
+}
+
 /*----------------------------------------------------*/
 /* About Me Section */
 #aboutSec {
+    display: flex;
     justify-self: center;
-    justify-content: center;
-    margin-bottom: 200px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+    margin-bottom: 100px;
+    margin-top: 6px;
+    padding-left: 200px;
     
 }
 #aboutMe {
@@ -81,7 +102,7 @@ html {
 }
 
 .information {
-    justify-items: center;
+    justify-items: flex-start;
     font-size: 25px;
 
 }
@@ -89,7 +110,7 @@ html {
 #logo {
     width: 60px;
     height: 60px; 
-    margin-right: 30px;   
+    margin-right: 50px;   
 }
 
 #personalPic {
@@ -106,9 +127,18 @@ html {
 
 /*----------------------------------------------------*/
 /* Autobiography Section */
-#autobiography {
-    justify-self: center;
+.autobiography {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 400px;
+    padding-right: 150px;
+    font-family: "Federo";
     font-size: 25px;
+    text-indent: 4em;
+    line-height: 3;
+    word-spacing: 0.1em;
 }
 
 
@@ -119,6 +149,10 @@ html {
     justify-self: center;
     justify-items: center;
     padding-top: 200px;
+    background-color: #040b1c;
+    padding: 80px 0;
+    width: 100%;
+    margin-top: 300px;
 }
 
 #skills {
